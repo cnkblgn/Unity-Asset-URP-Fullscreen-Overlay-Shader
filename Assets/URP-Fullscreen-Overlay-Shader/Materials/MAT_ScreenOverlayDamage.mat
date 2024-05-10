@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_ScreenScope
-  m_Shader: {fileID: -6465566751694194690, guid: 71c33ee3d153e504093349b40d9ce882, type: 3}
+  m_Name: MAT_ScreenOverlayDamage
+  m_Shader: {fileID: -6465566751694194690, guid: a92a0721900bd3744b6b481161ccbf55, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -24,7 +24,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: c920284f2d994fc44a57b50ed7b973da, type: 3}
+        m_Texture: {fileID: 2800000, guid: e627d43767883024385b7a0d88c0a063, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -63,6 +63,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _OverlayTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -82,32 +86,44 @@ Material:
     m_Ints: []
     m_Floats:
     - _BumpScale: 1
-    - _ChromaticPower: 2.5
+    - _ChromaticAberrationVignettePower: 1
+    - _ChromaticPower: 3.18
+    - _ChromaticVignettePower: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DistortionAlternative: 1
-    - _DistortionPower: -2
+    - _DistortionPower: -0.59
     - _DistortionScale: 0
+    - _DistortionVignettePower: 1
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _MaskRadius: 0.43
+    - _MaskSmoothness: 0.1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OverlayPower: 1
     - _Parallax: 0.02
+    - _Power: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _UseBaseMap: 1
-    - _VignetteRadius: 0.5
-    - _VignetteSmoothness: 0.165
+    - _UseVignetteOffset: 0
+    - _VignetteChromaticPower: 1
+    - _VignetteDistortionPower: 1
+    - _VignetteRadius: 0.62
+    - _VignetteSmoothness: 1
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OverlayOffset: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2: {r: 0, g: 1, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
+    - _VignetteColor: {r: 0.5377358, g: 0, b: 0, a: 0}
     - _VignetteOffset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

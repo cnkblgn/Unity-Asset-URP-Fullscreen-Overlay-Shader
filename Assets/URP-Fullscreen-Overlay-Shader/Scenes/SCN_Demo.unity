@@ -515,13 +515,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad8089b282a734243874c516fec4540b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scopeRenderer: {fileID: 1120169301320968781, guid: 696a313a622ee3d4c832ce6185aa2412, type: 2}
-  scopeMaterial: {fileID: 2100000, guid: cbec2217e632914458506180a557af21, type: 2}
-  scopeCamera: {fileID: 257693148}
-  scopeZoomTargetFov: 15
-  scopeZoomAcceleration: 2.5
-  scopeSwayAmplitude: {x: -1, y: -1}
-  scopeSwayAcceleration: 2.5
+  overlayRenderer: {fileID: 1120169301320968781, guid: 696a313a622ee3d4c832ce6185aa2412, type: 2}
+  overlayScopeMaterial: {fileID: 2100000, guid: cbec2217e632914458506180a557af21, type: 2}
+  overlayDamageMaterial: {fileID: 2100000, guid: feb83a20c9d5f61488b89aae9c93d686, type: 2}
+  overlayMaskMaterial: {fileID: 2100000, guid: 3ead8629fc97c6144b87615ba3b9484d, type: 2}
+  overlaySwayAmplitude: {x: 1, y: 1}
+  overlaySwayAcceleration: 2.5
 --- !u!114 &257693152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2666,10 +2665,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Mouse Middle Click: Show Scope
+  m_Text: 'Mouse Middle Click: Show Overlay
 
 
-    Mouse Right Click: Scope Zoom'
+    1: Damage Overlay
+
+    2: Scope
+    Overlay
+
+    3: Mask Overlay'
 --- !u!222 &1633264693
 CanvasRenderer:
   m_ObjectHideFlags: 0

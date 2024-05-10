@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/URP-Sample-Lens-Scope/Scenes/SCN_Demo.unity
+    path: Assets/URP-Fullscreen-Overlay-Shader/Scenes/SCN_Demo.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
