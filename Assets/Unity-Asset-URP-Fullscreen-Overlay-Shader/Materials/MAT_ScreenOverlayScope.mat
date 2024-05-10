@@ -52,5 +52,5 @@ Material:
     m_Colors:
     - _OverlayOffset: {r: 0, g: 0, b: 0, a: 0}
     - _VignetteColor: {r: 0, g: 0, b: 0, a: 0}
-    - _VignetteOffset: {r: 0.0065592406, g: 0.000102152306, b: 0, a: 0}
+    - _VignetteOffset: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
